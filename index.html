@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,0,0"/>
+    <title>login</title>
+</head>
+<body>
+    <div class="container">
+        <a class="links" id="paracadastro"></a>
+        <a class="links" id="paralogin"></a>
+
+        <div class="conteudo">
+            <div class="login-esquerdo">
+                <div class="cabecalho-login">
+                    <h1>Bem vindo ao SoundTube</h1>
+                </div>
+                <form method="get" class="formulario-login" autocomplete="off">
+                    <div class="conteudo-formulario-login">
+                        <div class="itens-formulario">
+                            <label for="formulario-email">Email</label>
+                            <input type="text" name="email-login" id="email-login" placeholder="Digite seu email">
+                            <label for="formulario-senha">Senha</label>
+                            <input type="password" name="senha-login" id="senha-login" placeholder="Digite sua senha">
+                            
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkboxLembreDeMim">
+                                <label class="checkboxLabel" for="checkboxLembreDeMim">Lembrar de mim</label>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div> 
+             <!--Formulário de cadastro-->
+            <div id="cadastro">
+                <form method="get" action="">
+                    <h1>Cadastre-se</h1>
+                    <p>
+                        <input type="text" name="nome-completo-cad" id="nome-completo-cad" placeholder="Digite seu nome completo">
+                    </p>
+                    <p>
+                        <input type="text" name="email-cad" id="email-cad" placeholder="Digite seu email">
+                    </p>
+                    <p>
+                        <input type="text" name="nome-usuario-cad" id="nome-usuario-cad" placeholder="Nome de usuário">
+                    </p>
+                    <p>
+                        <input type="password" name="senha-cad" id="senha-cad" placeholder="Digite uma senha">
+                    </p>
+                    <p>
+                        <input type="submit" value="Cadastre-se">
+                    </p>
+                    <p class="link"> Já tem uma conta? <a href="#paralogin">Faça o login</a></p>
+                </form>
+            </div>    
+        </div>
+        <div class="login-direito">
+            <img src="./src/imagem/imagem.svg" alt="imagem-de-parede"/>
+          </div>    
+    </div>
+</body>
+</html>
