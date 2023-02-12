@@ -19,7 +19,7 @@ body {
   overflow: hidden;
 }
 
-.login-esquerdo {
+.login-esquerdo, .cadastro-esquerdo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,7 +27,12 @@ body {
   background-color: white;
 }
 
-.login-direito {
+.login-direito{
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+}
+.cadastro-direito{
   background-color: #eeeeee;
   display: flex;
   justify-content: center;
@@ -35,27 +40,30 @@ body {
 .login-direito img {
   width: 80%;
 }
+.cadastro-direito img{
+  width: 80%;
+}
 
-.cabecalho-login {
+.cabecalho-login, .cabecalho-cadastro {
   margin-bottom: 50px;
 }
-.cabecalho-login h1 {
+.cabecalho-login, .cabecalho-cadastro h1 {
   font-size: 40px;
   margin-bottom: 10px;
 }
-.cabecalho-login p {
+.cabecalho-login .cabecalho-cadastro p {
   opacity: 0.7;
 }
 
-.formulario-login {
+.formulario-login, .formulario-cadastro {
   width: 450px;
 }
-.conteudo-formulario-login {
+.conteudo-formulario-login, .conteudo-formulario-cadastro{
   display: flex;
   flex-direction: column;
   gap: 35px;
 }
-.formulario-rodape-login {
+.formulario-rodape-login, .formulario-rodape-cadastro {
   display: flex;
   gap: 30px;
   margin-top: 70px;
@@ -72,7 +80,22 @@ body {
   color: black;
   text-decoration: none;
 }
+.formulario-rodape-cadastro a{
+  flex: 6;
+  gap: 10px;
+  border-radius: 100px;
+  padding: 0.6rem;
+  justify-content: center;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
 .formulario-rodape-login a:hover {
+  background-color: #eeeeee;
+}
+.formulario-rodape-cadastro a:hover{
   background-color: #eeeeee;
 }
 
@@ -150,7 +173,7 @@ button {
   .container {
     grid-template-columns: auto;
   }
-  .login-direito {
+  .login-direito, .cadastro-direito {
     display: none;
   }
 } /*# sourceMappingURL=style.css.map */
